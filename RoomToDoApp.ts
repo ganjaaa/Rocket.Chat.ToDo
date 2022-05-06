@@ -1,7 +1,7 @@
 
 import { App } from '@rocket.chat/apps-engine/definition/App';
 import { UIActionButtonContext } from '@rocket.chat/apps-engine/definition/ui';
-import { IAppInfo,RocketChatAssociationModel, RocketChatAssociationRecord } from '@rocket.chat/apps-engine/definition/metadata';
+import { IAppInfo } from '@rocket.chat/apps-engine/definition/metadata';
 import { IAppAccessors, IConfigurationExtend, IHttp, ILogger, IModify, IPersistence, IRead, IConfigurationModify } from '@rocket.chat/apps-engine/definition/accessors';
 import { IUIKitResponse, UIKitBlockInteractionContext, UIKitViewSubmitInteractionContext, IUIKitInteractionHandler, UIKitActionButtonInteractionContext, ISectionBlock } from '@rocket.chat/apps-engine/definition/uikit';
 
