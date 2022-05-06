@@ -13,6 +13,8 @@ This App is still in Beta!
 ## Usage
 TODO: write a usage with Images
 
+## Credits
+* https://github.com/yumenoshizuku/Rocket.Chat.Todo for some Code-Parts
 ## Known Bugs
 * Adding new ToDo's over the Input-Filed doesnt work (and I dont know how :D)
 * Slash Commands doesnt work correctly
