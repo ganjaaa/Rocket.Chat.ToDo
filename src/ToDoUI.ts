@@ -87,6 +87,8 @@ export class ToDoUI {
         //await ToDoStorage.storeRoomId(persistence,viewId, roomId);
         const blocks = modify.getCreator().getBlockBuilder();
 
+        /*
+
         // Input Block
         blocks.addInputBlock({
             blockId: 'addTaskInput',
@@ -97,6 +99,8 @@ export class ToDoUI {
             })
         });
         blocks.addDividerBlock();
+
+        */
 
         if (typeof content !== 'undefined') {
             for (let i = 0; i < content.length; i++) {
