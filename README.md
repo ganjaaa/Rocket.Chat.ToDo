@@ -17,11 +17,10 @@ TODO: write a usage with Images
 * https://github.com/yumenoshizuku/Rocket.Chat.Todo for some Code-Parts
 ## Known Bugs
 * Adding new ToDo's over the Input-Filed doesnt work (and I dont know how :D)
-* Slash Commands doesnt work correctly
+* ´/todo open´ doesnt work :(
 
 ## Some Links for me :)
-https://developer.rocket.chat/apps-engine/fundamentals-of-apps/uikit/action-buttons
-https://developer.rocket.chat/apps-engine/fundamentals-of-apps/uikit/uikit-building-blocks
-https://developer.rocket.chat/apps-engine/recipes/making-http-requests
-https://developer.rocket.chat/apps-engine/recipes/storing-user-input
-https://developer.rocket.chat/apps-engine/recipes/storing-user-input
+* https://developer.rocket.chat/apps-engine/fundamentals-of-apps/uikit/action-buttons
+* https://developer.rocket.chat/apps-engine/fundamentals-of-apps/uikit/uikit-building-blocks
+* https://developer.rocket.chat/apps-engine/recipes/making-http-requests
+* https://developer.rocket.chat/apps-engine/recipes/storing-user-input

@@ -1,6 +1,6 @@
 {
     "action_button_open_list": "Open To Do List",
     "action_button_add_to_list": "Add as To Do",
-    "todo_command_params": "No Parameters",
+    "todo_command_params": "open, add, del, flush, help",
     "todo_command_description": "Just type /todo to open the List"
 }
