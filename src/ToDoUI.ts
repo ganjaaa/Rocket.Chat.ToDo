@@ -7,11 +7,21 @@ import { IUIKitContextualBarViewParam } from '@rocket.chat/apps-engine/definitio
 import { ToDoStorage } from './ToDoStorage';
 import { ToDoDefinitions } from './ToDoDefinitions';
 import { RocketChatAssociationModel, RocketChatAssociationRecord } from '@rocket.chat/apps-engine/definition/metadata';
+import { SlashCommandContext } from '@rocket.chat/apps-engine/definition/slashcommands';
 
 export class ToDoUI {
 
     public static async clickOpen(persistence: IPersistence, persistenceRead: IPersistenceRead, modify: IModify, context: UIKitActionButtonInteractionContext) {
         const { buttonContext, actionId, triggerId, user, room, message } = context.getInteractionData();
+        // Open Sidebar
+        const list = await ToDoStorage.getRoomEntries(persistenceRead, room);
+        await modify.getUiController().openContextualBarView(await ToDoUI.createToDoBlocks(triggerId, persistence, room.id, modify, list), { triggerId }, user);
+    }
+
+    public static async clickOpenCMD(persistence: IPersistence, persistenceRead: IPersistenceRead, modify: IModify, context: SlashCommandContext) {
+        const user = context.getSender();
+        const triggerId = context.getTriggerId() ?? ToDoDefinitions.uuid();
+        const room = context.getRoom();
         // Open Sidebar
         const list = await ToDoStorage.getRoomEntries(persistenceRead, room);
         await modify.getUiController().openContextualBarView(await ToDoUI.createToDoBlocks(triggerId, persistence, room.id, modify, list), { triggerId }, user);

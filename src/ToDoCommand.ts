@@ -2,6 +2,7 @@ import { IModify, IRead, IHttp, IPersistence, IModifyCreator, IMessageBuilder, I
 import { ISlashCommand, SlashCommandContext } from '@rocket.chat/apps-engine/definition/slashcommands';
 import { ToDoDefinitions } from './ToDoDefinitions';
 import { ToDoStorage } from './ToDoStorage';
+import { ToDoUI } from './ToDoUI';
 
 
 export class ToDoCommand implements ISlashCommand {
@@ -25,7 +26,7 @@ export class ToDoCommand implements ISlashCommand {
 
         } else if (args[0] === ToDoDefinitions.CMD_OPEN) {
             // open todo list
-
+            await ToDoUI.clickOpenCMD(persis, read.getPersistenceReader(), modify, context);
 
         } else if (args[0] === ToDoDefinitions.CMD_ADD) {
             // add new todo
