@@ -1,0 +1,38 @@
+{
+    "id": "d805a329-4f6f-481d-8551-d03cabb22955",
+    "version": "0.1.0",
+    "requiredApiVersion": "^1.31.0",
+    "iconFile": "icon.png",
+    "author": {
+        "name": "Felix Kurth",
+        "homepage": "https://github.com/ganjaaa/",
+        "support": "https://github.com/ganjaaa/"
+    },
+    "name": "Room-to-Do",
+    "nameSlug": "room-to-do",
+    "classFile": "RoomToDoApp.ts",
+    "description": "Add a ToDo list to every Room",
+    "permissions": [
+        {
+            "name": "ui.interact"
+        },
+        {
+            "name": "slashcommand"
+        },
+        {
+            "name": "persistence"
+        },
+        {
+            "name": "room.read"
+        },
+        {
+            "name": "message.read"
+        },
+        {
+            "name": "ui.registerButtons"
+        }
+    ],
+    "implements": [
+        "IUIKitInteractionHandler"
+    ]
+}
